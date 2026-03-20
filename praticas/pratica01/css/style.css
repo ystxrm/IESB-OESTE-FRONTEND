@@ -1,0 +1,63 @@
+:root {
+    --azul-claro: #15B5C2;
+    --azul-um-pouco-mais-escuro: #14ABBB;
+    --azul-escuro: #12A7C7;
+    --cinza-claro: #A1A1A2;
+    --cinza-um-pouco-mais-escuro: #5E5F61;
+    --cinza-escuro: #5B5C5E;
+    --principal: #ffff;
+}
+
+body,
+html {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Logo {
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+    margin-right: 500px;
+}
+
+#top {
+    background-color: var(--cinza-um-pouco-mais-escuro);
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 94px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+li {
+    display: inline-block;
+    margin: 4px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--principal);
+    color: var(--cinza-escuro);
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 12px;
+}
+
+.btn:hover {
+    background-color: var(--azul-claro);
+}
+
+.destaque h1 {
+    display: flex;
+    justify-content: center;
+}
