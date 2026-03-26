@@ -1,4 +1,3 @@
-// src/components/Heading.jsx
-export function Heading() {
-  return <h1>Olá, Mundo!</h1>;
+export function Heading(props) {
+  return <h1>{props.children}</h1>;
 }
