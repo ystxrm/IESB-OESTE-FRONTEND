@@ -1,3 +1,6 @@
-export function Heading(props) {
-  return <h1>{props.children}</h1>;
-}
+import React from 'react'; // Importante importar o React
+
+type HeadingProps = {
+  // Agora aceitamos texto OU outros componentes JSX!
+  children: React.ReactNode;
+};
