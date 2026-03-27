@@ -4,10 +4,9 @@ import { Menu } from './components/Menu';
 import { CountDown } from './components/CountDown';
 import { DefaultInput } from './components/DefaultInput';
 import { Cycles } from './components/Cycles';
-import { DefaultButton } from './components/DefaultButton'; // <-- Importado!
-
-// Importando os ícones do pacote lucide-react (Certifique-se de ter instalado!)
-import { PlayCircleIcon, StopCircleIcon } from 'lucide-react';
+import { DefaultButton } from './components/DefaultButton';
+import { PlayCircleIcon } from 'lucide-react';
+import { Footer } from './components/Footer'; // <-- Importado!
 
 import './styles/theme.css';
 import './styles/global.css';
@@ -15,7 +14,15 @@ import './styles/global.css';
 export function App() {
   return (
     <>
-      {/* ... containers anteriores (Logo, Menu, CountDown) ... */}
+      <Container>
+        <Logo>opa</Logo>
+      </Container>
+      <Container>
+        <Menu />
+      </Container>
+      <Container>
+        <CountDown />
+      </Container>
 
       <Container>
         <form className='form' action=''>
@@ -36,15 +43,16 @@ export function App() {
             <Cycles />
           </div>
 
-          {/* Testando os nossos botões dinâmicos */}
           <div className='formRow'>
-            {/* Como o color padrão é 'green', não precisamos passar a prop aqui! */}
-            <DefaultButton icon={<PlayCircleIcon />} color='green' />
-
-            {/* Forçando o botão a ser vermelho e mudando o ícone */}
-            <DefaultButton icon={<StopCircleIcon />} color='red' />
+            {/* Mantivemos apenas o botão principal de Play */}
+            <DefaultButton icon={<PlayCircleIcon />} />
           </div>
         </form>
+      </Container>
+
+      {/* Nosso novo rodapé entra aqui, no seu próprio Container! */}
+      <Container>
+        <Footer />
       </Container>
     </>
   );
