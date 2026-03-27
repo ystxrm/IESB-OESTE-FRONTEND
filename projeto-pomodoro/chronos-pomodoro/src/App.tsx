@@ -1,35 +1,19 @@
-// src/App.jsx
+// src/App.tsx
+import { Container } from './components/Container';
+import { Heading } from './components/Heading';
 
 export function App() {
   return (
     <>
       {/* Seção 1: Logo */}
-      <div className='container'>
-        <div className='content'>
-          <p>Logo do App</p>
-        </div>
-      </div>
+      <Container>
+        <Heading>Logo</Heading>
+      </Container>
 
       {/* Seção 2: Menu */}
-      <div className='container'>
-        <div className='content'>
-          <p>Menu de Navegação</p>
-        </div>
-      </div>
-
-      {/* Seção 3: Formulário / Cronômetro */}
-      <div className='container'>
-        <div className='content'>
-          <p>Área do Cronômetro</p>
-        </div>
-      </div>
-
-      {/* Seção 4: Footer */}
-      <div className='container'>
-        <div className='content'>
-          <p>Rodapé da Página</p>
-        </div>
-      </div>
+      <Container>
+        <Heading>Menu</Heading>
+      </Container>
     </>
   );
 }
