@@ -1,6 +1,6 @@
 // src/App.tsx
+// ✅ O Vite procura automaticamente o index.tsx dentro da pasta Container!
 import { Container } from './components/Container';
-import { Heading } from './components/Heading';
 
 export function App() {
   return (
