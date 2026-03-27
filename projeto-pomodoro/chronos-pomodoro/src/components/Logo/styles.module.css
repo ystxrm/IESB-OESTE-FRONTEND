@@ -5,3 +5,7 @@
   align-items: center; /* Centraliza o conteúdo verticalmente (alinhamento perfeito) */
   gap: 2.4rem; /* Adiciona 24px de espaço entre o texto e o botão/ícone */
 }
+/* Antes era 50%, mude para 80% */
+.logoLink:hover {
+  filter: brightness(80%);
+}
