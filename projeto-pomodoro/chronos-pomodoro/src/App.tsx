@@ -44,6 +44,18 @@ export function App() {
           <div className='formRow'>
             <button>Enviar</button>
           </div>
+          {
+  /* Dentro do seu formulário... */
+}
+<div className='formRow'>
+  <DefaultInput
+    labelText='task'
+    id='meuInput'
+    type='text'
+    placeholder='Digite algo'
+    /* Tente adicionar a palavra "disabled" (sem aspas) aqui para ver o estado desativado! */
+  />
+</div>;
         </form>
       </Container>
     </>

@@ -1,4 +1,4 @@
-import React from 'react';
+import styles from './styles.module.css'; // <-- Importando o CSS Module
 
 type DefaultInputProps = {
   id: string;
@@ -9,13 +9,13 @@ export function DefaultInput({
   id,
   type,
   labelText,
-  ...rest // 1. Pega todas as outras propriedades (disabled, required, etc)
+  ...rest
 }: DefaultInputProps) {
   return (
     <>
       <label htmlFor={id}>{labelText}</label>
-      {/* 2. Despeja o restante das propriedades direto no input */}
-      <input id={id} type={type} {...rest} />
+      {/* Aplicando a classe dinâmica gerada pelo CSS Module */}
+      <input className={styles.input} id={id} type={type} {...rest} />
     </>
   );
 }
