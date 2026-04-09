@@ -2,16 +2,16 @@
     --gray-100: #e6e9f0;
     --gray-200: #cdd3e1;
     --gray-300: #aab3cc;
-    --gray-400: #555f7d;
-    --gray-500: #454f6a;
-    --gray-600: #363d56;
+    --gray-400: #0fff06cb;
+    --gray-500: #1dff15;
+    --gray-600: #18ff43;
     --gray-700: #272f43;
     --gray-800: #181f2e;
     --gray-900: #0a0f1a;
 
-    --primary-light: #4de7b7;
-    --primary: #2527c1;
-    --primary-dark: #065f46;
+    --primary-light: #157d24;
+    --primary: #04f244;
+    --primary-dark: #09ff00;
 
     --link-color: #10b981;
     --link-hover: #0b8a60;
